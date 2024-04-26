@@ -8,6 +8,8 @@ on:
     branches: [ "Aula_2" ]
   pull_request:
     branches: [ "Aula_2" ]
+  schedule:
+  - cron: "7 18 * * 1-5"
 
 jobs:
 
