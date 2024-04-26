@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: [ "Aula_2" ]
   schedule:
-  - cron: "7 18 * * 1-5"
+  - cron: "15 18 * * 5"
 
 jobs:
 
@@ -19,7 +19,7 @@ jobs:
     strategy:
       matrix:
         go_version: ['>=1.18']
-        os: [windows-2022]
+        os: [Ubuntu-latest]
     steps:
     - uses: actions/checkout@v3
 
